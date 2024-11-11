@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de Gerenciamento Empresarial</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Pesquisar..."
+          onkeyup="filterMenu()"
+        />
+        <ul id="menuList">
+          <li onclick="showSubMenu('Cadastros')">
+            <img src="icons/cadastros.png" alt="Cadastros" /> Cadastros
+          </li>
+          <li onclick="showSubMenu('Fornecedores')">
+            <img src="icons/fornecedores.png" alt="Fornecedores" /> Fornecedores
+          </li>
+          <li onclick="showSubMenu('Clientes')">
+            <img src="icons/clientes.png" alt="Clientes" /> Clientes
+          </li>
+          <li onclick="showSubMenu('Equipamento')">
+            <img src="icons/equipamento.png" alt="Equipamento" /> Equipamento
+          </li>
+          <li onclick="showSubMenu('Produtos')">
+            <img src="icons/produtos.png" alt="Produtos" /> Produtos
+          </li>
+          <!-- Continue com os outros itens de menu -->
+        </ul>
+      </nav>
+      <div class="content">
+        <header>
+          <h1>Dashboard de Gerenciamento Empresarial</h1>
+        </header>
+        <main>
+          <h2>Bem-vindo ao Sistema de Gerenciamento</h2>
+          <p>Selecione uma opção no menu à esquerda.</p>
+        </main>
+        <div id="subMenu" class="submenu"></div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

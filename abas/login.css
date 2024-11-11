@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace; /* Fonte de estilo programação */
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #000b12, #003166);
+  padding: 20px; /* Adiciona um pouco de espaço nas laterais */
+}
+
+.topo {
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.topopar {
+  font-size: 1em; /* Tamanho da fonte responsivo */
+  color: #f4f4f4;
+  margin-bottom: 1em;
+}
+
+.container {
+  background: #66b3ff; /* Azul mais claro */
+  padding: 2vw 2vw; /* Usa unidades relativas */
+  border-radius: 10px;
+  border: solid 1px #000b12;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 90%; /* Largura adaptável */
+  max-width: 400px; /* Largura máxima para telas grandes */
+  color: white;
+  text-align: center;
+}
+
+.logo {
+  width: 25%; /* Tamanho relativo para responsividade */
+  max-width: 100px; /* Largura máxima da logo */
+  margin-bottom: 10px; /* Espaçamento abaixo da logo */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.3em; /* Tamanho da fonte responsivo */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-group label {
+  text-align: left;
+  margin-left: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Campos de preenchimento - entradas */
+input {
+  width: calc(100% - 30px); /* Ajusta a largura do input */
+  padding: 10px;
+  border: solid 0.5px #003166;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+button {
+  width: 50%; /* Largura do botão em porcentagem */
+  padding: 10px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+button:hover {
+  background-color: #004494;
+}
+
+/* Fraze "esqueceu a senha" */
+.forgot-password {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #ffdddd;
+  margin-top: 10px;
+}
+
+/* Media Queries para ajuste em telas menores */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1,
+  .topo p {
+    font-size: 1.5em; /* Reduzir tamanho da fonte em telas pequenas */
+  }
+
+  button {
+    width: 50%; /* Botão ocupa a largura total em telas pequenas */
+  }
+
+  .logo {
+    width: 50%; /* Ajusta o tamanho da logo */
+  }
+}
+
+/* Media Queries para dispositivos móveis em modo paisagem */
+@media (orientation: landscape) and (max-width: 600px) {
+  .container {
+    padding: 15px;
+    width: 95%; /* Aumenta a largura do contêiner em modo paisagem */
+  }
+
+  h1,
+  .topo p {
+    font-size: 2em; /* Aumenta o tamanho da fonte em modo paisagem */
+  }
+
+  button {
+    width: 80%; /* Ajusta a largura do botão */
+  }
+
+  .logo {
+    width: 40%; /* Ajusta o tamanho da logo */
+  }
+}

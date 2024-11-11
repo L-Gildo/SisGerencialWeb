@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento Empresarial</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="topo">
+      <h1>Mix TI Soluções comerciais</h1>
+      <p>Central de atendimento</p>
+    </div>
+    <div class="topopar">
+      <p>
+        <img src="/images/wapp.png" width="25px"></img>(85)9 8137-8125 
+        <img src="/images/phone.webp" width="25px"></img>(85)3038-4893
+      </p>
+    </div>
+    <div class="container">
+      <img src="/images/mti.png" alt="Logo de Gestão Empresarial" class="logo" />
+      <!-- LOGIN -->
+      <h1>
+        Bem vindo ao<br />
+        Gerenciamento Empresarial
+      </h1>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Usuário:</label>
+          <input type="text" id="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" required />
+        </div>
+        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        <!-- LINK PARA RECUPERAÇÃO DE SENHA -->
+        <button type="submit">Entrar</button>
+        <p id="error" class="error"></p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
